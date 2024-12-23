@@ -4,9 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { HashLink as Link } from 'react-router-hash-link';
 import foto from '../assets/foto-pessoal.jpg';
+import { FaUser, FaLaptopCode, FaEnvelope } from 'react-icons/fa'; // Ícones para o menu
 
 const Header = () => {
-  const [menu, setMenu] = useState(false);
+  const [menu, setMenu] = useState(true);
 
   const menuSwitch = () => {
     setMenu(!menu);
@@ -22,11 +23,11 @@ const Header = () => {
         <span>Developer Front-End</span>
       </div>
       <FontAwesomeIcon icon={faBars} onClick={menuSwitch} />
-        <ul className={menu ? "active" : ""}>
-          <li><Link to="#home">Informações</Link></li>
-          <li><Link to="#projects">Projetos</Link></li>
-          <li><Link to="#contact">Contato</Link></li>
-        </ul>
+      <ul className={menu ? "active" : ""}>
+        <li><FaUser /> <Link to="#home">Informações</Link></li>
+        <li><FaLaptopCode /> <Link to="#projects">Projetos</Link></li>
+        <li><FaEnvelope /> <Link to="#contact">Contato</Link></li>
+      </ul>
     </div>
   );
 };
