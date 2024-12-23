@@ -1,0 +1,114 @@
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #1b1c1f;
+    justify-content: space-between;
+}
+
+.header img {
+    width: 220px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.header-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.header-info h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.header ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    list-style-type: none;
+    font-size: 1.5rem;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+    order: 1;
+}
+
+.header ul.active {
+    opacity: 1;
+    max-height: 500px;
+}
+
+.header li {
+    padding: 10px 30px;
+    background-color: rgb(62, 62, 62);
+    border-radius: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.header li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+}
+
+.header li:hover {
+    background-color: rgb(50, 50, 50);
+    transform: scale(1.05);
+}
+
+.header svg {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    font-size: 2rem;
+    order: 2;
+}
+
+@media (min-width: 856px) and (max-width: 1435px) {
+    .header ul {
+        width: 100%;
+        justify-content: center;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 810px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header ul {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header svg {
+        transform: translateY(-150px) translateX(240px);
+    }
+}
+
+@media (max-width: 506px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header span {
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .header svg {
+        transform: translateY(10px) translateX(0);
+    }
+}
