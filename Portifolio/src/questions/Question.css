@@ -1,5 +1,5 @@
 .tech-icon:hover {
-    transform: scale(1.2); /* Aumenta o tamanho do ícone */
-    filter: brightness(1.5); /* Dá um efeito de brilho quando o ícone é passado */
+    transform: scale(1.2);
+    filter: brightness(1.5); 
 }
 
