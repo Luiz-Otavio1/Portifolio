@@ -70,9 +70,8 @@
 
 @media (max-width: 810px) {
     .home {
-        margin-top: 560px;
+        margin-top: 0;
     }
-
     .home .questions-info {
         gap: 30px;
     }
@@ -90,9 +89,3 @@
     }
 }
 
-
-@media (max-width: 562px) {
-    .home {
-        margin-top: 606px;
-    }
-}
