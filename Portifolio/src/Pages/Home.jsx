@@ -8,8 +8,8 @@ const Home = () => {
   return (
     <div className='home'>
       <div className='questions-info'>
-       {questions.map((question) => (
-          <Question key={question.id} question={question}/>
+        {questions.map((question) => (
+          <Question key={question.id} question={question} />
         ))}
       </div>
     </div>

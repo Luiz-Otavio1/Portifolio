@@ -24,9 +24,9 @@ const Header = () => {
       </div>
       <FontAwesomeIcon icon={faBars} onClick={menuSwitch} />
       <ul className={menu ? "active" : ""}>
-        <li><FaUser /> <Link to="#home">Informações</Link></li>
-        <li><FaLaptopCode /> <Link to="#projects">Projetos</Link></li>
-        <li><FaEnvelope /> <Link to="#contact">Contato</Link></li>
+        <li><FaUser /> <Link to="#home">Detalhes</Link></li>
+        <li><FaLaptopCode /> <Link to="#projects">Projects</Link></li>
+        <li><FaEnvelope /> <Link to="#contact">Contact</Link></li>
       </ul>
     </div>
   );

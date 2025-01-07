@@ -44,7 +44,7 @@
 }
 
 .home .question .question-info {
-    font-size: 1.7rem;
+    font-size: 1.35rem;
     margin-bottom: 10px;
     margin: 10px auto;
     font-weight: bold;
@@ -52,7 +52,7 @@
 }
 
 .home .question .answer {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.6;
     color: #b3b3b3;
     transition: color 0.3s ease;
@@ -81,11 +81,11 @@
     }
 
     .home .question .question-info {
-        font-size: 1.4rem;
-    }
-
-    .home .question .answer-info {
         font-size: 1.2rem;
+        justify-content: center;
+    }
+    .home .question .answer-info {
+        font-size: 1rem;
     }
 }
 

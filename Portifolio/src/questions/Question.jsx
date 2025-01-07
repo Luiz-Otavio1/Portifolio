@@ -17,11 +17,11 @@ const questionAnswer = [
     {
         question: "Quais tecnologias você utiliza em seus projetos?",
         answer: [
-            <FaHtml5 size={30} style={{ color: '#E34F26', transition: 'all 0.3s ease', cursor: 'pointer' }} className="tech-icon" />,
-            <FaCss3Alt size={30} style={{ color: '#2965F1', transition: 'all 0.3s ease', cursor: 'pointer' }} className="tech-icon" />,
-            <FaJs size={30} style={{ color: '#F7DF1E', transition: 'all 0.3s ease', cursor: 'pointer' }} className="tech-icon" />,
-            <FaReact size={30} style={{ color: '#61DAFB', transition: 'all 0.3s ease', cursor: 'pointer' }} className="tech-icon" />,
-            <FaGithub size={30} style={{ color: '#181717', transition: 'all 0.3s ease', cursor: 'pointer' }} className="tech-icon" />,
+            <FaHtml5 key="html" size={30} style={{ color: '#E34F26', transition: 'all 0.3s ease', cursor: 'pointer' }} className="tech-icon" />,
+            <FaCss3Alt key="css" size={30} style={{ color: '#2965F1', transition: 'all 0.3s ease', cursor: 'pointer' }} className="tech-icon" />,
+            <FaJs key="js" size={30} style={{ color: '#F7DF1E', transition: 'all 0.3s ease', cursor: 'pointer' }} className="tech-icon" />,
+            <FaReact key="react" size={30} style={{ color: '#61DAFB', transition: 'all 0.3s ease', cursor: 'pointer' }} className="tech-icon" />,
+            <FaGithub key="github" size={30} style={{ color: '#181717', transition: 'all 0.3s ease', cursor: 'pointer' }} className="tech-icon" />,
         ],
         id: 3,
         icon: <FaLaptopCode size={30} color="#3498DB" />
