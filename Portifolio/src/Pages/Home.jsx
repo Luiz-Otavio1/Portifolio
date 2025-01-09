@@ -7,6 +7,7 @@ import Question from '../Components/Question'
 const Home = () => {
   return (
     <div className='home'>
+      <span>informações...</span>
       <div className='questions-info'>
         {questions.map((question) => (
           <Question key={question.id} question={question} />

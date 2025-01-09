@@ -1,0 +1,134 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+    background: linear-gradient(45deg, #17181a, #0f1216);
+}
+span {
+    color: #b3b3b3;
+    font-size: 0.8rem;
+    margin-bottom: 30px;
+}
+.contacts-item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    max-width: 245px;
+    padding: 7px;
+    transition: all 0.3s;
+}
+
+.contact-item:hover{
+    transform: translateY(-2px);
+    border-radius: 20px;
+    background-color: rgb(48, 47, 47);
+    filter: brightness(1.1);
+}
+
+.contact-item svg {
+    font-size: 3rem;
+}
+
+.contact-item span {
+    font-size: 1.3rem;
+    color: #b3b3b3;
+}
+
+.contact-item a {
+    color: #b3b3b3;
+    font-size: 1.3rem;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.whats-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    gap: 30px; 
+    padding: 20px;  
+    width: 100%; 
+    border-radius: 12px; 
+    box-shadow: 11px 6px 13px -4px rgba(0, 0, 0, 0.75);
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+}
+
+.whats-info h3 {
+    color: rgb(97, 132, 97);
+    font-size: 2.5rem; 
+}
+
+.whats-info svg {
+    font-size: 3rem; 
+}
+
+.whats-info input,
+.whats-info textarea {
+    border: 2px solid #3a3a3a; 
+    background-color: #222;
+    color: #f1f1f1;
+    padding: 16px 25px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    width: 100%; 
+}
+
+.whats-info input::placeholder,
+.whats-info textarea::placeholder {
+    color: #666;
+}
+
+.whats-info input:focus,
+.whats-info textarea:focus {
+    border-color: #66bb6a;
+    box-shadow: 0 0 10px rgba(102, 187, 106, 0.5);
+    background-color: #333; 
+}
+
+.whats-info input:focus::placeholder,
+.whats-info textarea:focus::placeholder {
+    color: #66bb6a; 
+}
+
+.whats-info input:hover,
+.whats-info textarea:hover {
+    background-color: #2a2a2a;
+    border-color: #666; 
+}
+
+.whats-info a {
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: rgb(40, 217, 64);
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.whats-info a:hover {
+    background-color: rgb(35, 176, 52); 
+}
+
+
+@media (max-width: 566px) {
+    .contacts-item {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
